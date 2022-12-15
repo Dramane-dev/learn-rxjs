@@ -1,6 +1,10 @@
 <div class="home-container">
     <app-card
-     *ngFor=""
+     *ngFor="let todo of todos"
+     [userId]="todo.userId"
+     [id]="todo.id"
+     [title]="todo.title"
+     [completed]="todo.completed"
     >
     </app-card>
 </div>
